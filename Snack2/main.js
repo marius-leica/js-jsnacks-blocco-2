@@ -11,8 +11,5 @@ let invitedListContent;
 // creiamo il ciclo dentro al quale generiamo un numero casuale da 1 a 5 che peschera quel indice dalla lista nomi e lista cognomi
 for (let i = 0; i < 5; i++) {
   const randomNumber = Math.floor(Math.random() * 5); // generiamo un numero casuale da 1 a 5
-  invitedList.innerHTML += 
-    <li>surnameList[randomNumber] + " " + nameList[randomNumber]</li>
-  );
- 
+  invitedList.innerHTML += `<li> ${surnameList[randomNumber]} ${nameList[randomNumber]}</li>`;
 }
